@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* imp      to completely hide scrollbar use overflow in body */
+    overflow: hidden;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    background-color: #333;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 40px;
+}
+
+nav a:hover {
+    /* color: #4CAF50; */
+    background-color: grey;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10fr 100px 1fr;
+    grid-template-columns: 3fr 6fr 3fr;
+    overflow: hidden;
+    /* overflow: visible; */
+}
+
+aside {
+    background-color: rgb(231, 233, 235);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    gap: 5px;
+    border-right: 10px solid #f2f2f2;
+}
+
+aside:last-child {
+    border-right: none;
+    border-left: 10px solid #f2f2f2;
+}
+
+aside h3 {
+    display: inline-block;
+    width: 100%;
+    padding: 0 4rem;
+}
+
+aside h3:hover {
+    cursor: pointer;
+    background-color: rgb(201, 196, 196);
+    border-radius: 5px;
+    /* increase hover size */
+}
+
+article {
+    /* background-color: rgb(231, 233, 235); */
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px 5px 0 20px;
+}
+
+article button {
+    padding: 15px;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 5px 5px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main{
+    background-color: #f2f2f2;
+    height: 400px;
+    display: grid;
+    width: 100%;
+}
+
+main header{
+    text-align: center;
+}
+nav {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    justify-items: center;
+    width: 100%;
+} */
